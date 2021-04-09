@@ -5,7 +5,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-// var pokemonRouter = require('./routes/pokemon');
+var pokemonRouter = require('./routes/pokemon');
 // var clothingRouter = require('./routes/clothing');
 // var starwarsRouter = require('./routes/starwars');
 // var recipeRouter = require('./routes/recipe');
@@ -21,7 +21,7 @@ app.use(express.static(path.join(__dirname, 'public'),{extensions: 'html'}));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-// app.use('/pokemon', pokemonRouter);
+app.use('/pokemon', pokemonRouter);
 // app.use('/clothing', clothingRouter);
 // app.use('/starwars', starwarsRouter);
 // app.use('/recipe', recipeRouter);
