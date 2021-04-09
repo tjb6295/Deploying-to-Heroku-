@@ -160,3 +160,26 @@ h2 {
   margin-left: 125px;
   margin-right: auto;
 }
+
+/* https://www.w3schools.com/css/css_align.asp */
+.center {
+  margin: auto;
+  width: 50%;
+  /* border: 3px solid green; */
+  padding: 10px;
+}
+
+span {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+
+/* .addSpace {
+  word-spacing: 5px;
+  padding-left: 70px;
+  border: 1px solid #4CAF50;
+} */
