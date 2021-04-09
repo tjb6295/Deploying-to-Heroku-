@@ -37,4 +37,38 @@
     </div>
 
     <h1>Contact Us Page</h1>
+    <form onsubmit="return false"></form>
+
+<input type="text" placeholder="Enter your first name" id="firstName">
+<br>
+<br>
+
+<input type="text" placeholder="Enter your last name" id="lastName">
+<br>
+<br>
+
+<input type="email" placeholder="Enter your email" id="email">
+   
+<select id="state">
+ <option disabled selected value> -- select a State -- </option>
+ <option value="Pennsylvania">Pennsylvania</option>
+ <option value="NewYork">New York</option>
+ <option value="California">California</option>
+ <option value="Other">Other</option>
+</select>
+<br>
+<br>
+
+<input type="radio" id="Employer" name="discription" value="employer"> Employer
+<input type="radio" id="Other" name="discription" value="other"> Other
+<br>
+<br>
+
+<span>Do you have a question?</span>
+<br>
+
+<textarea id="question" rows="4"></textarea>
+<br>
+
+<button onclick="sendContact();">Send contact</button>
 </body>
