@@ -40,30 +40,7 @@ function makeRequest(){
 
 
 // for contact form credit to codebrainer https://www.codebrainer.com/blog/contact-form-in-javascript
-let discriptionValue = Other.checked ? "employer" : "other"
 
-//I commented this part out for now but I would like to eventually make it so that the information is actually sent to
-//my email, I felt that this was to involved for now and would take me a couple hours to work out
-// function getDiscription() {
-//     return document.querySelector('input[name="discription"]:checked')
-//    }
-
-//    document.addEventListener("DOMContentLoaded", function() {
-//     fields.firstName = document.getElementById('firstName');
-//     fields.lastName = document.getElementById('lastName');
-//     fields.email = document.getElementById('email');
-//     fields.country = document.getElementById('state');
-//     fields.question = document.getElementById('question');
-//    })
-
-//    function isNotEmpty(value) {
-//     if (value == null || typeof value == 'undefined' ) return false;
-//     return (value.length > 0);
-//    }
-
-//    function isNumber(num) {
-//     return (num.length > 0) && !isNaN(num);
-//    }
 
    //method which initializes my variables
    class User {
@@ -84,3 +61,27 @@ let discriptionValue = Other.checked ? "employer" : "other"
         //attempted to actually send this info to my email couldnt figure it out
         location = "mailto:thomas.j.beck23@gmail.com";
    }
+
+
+ //For collapsible Objective style guide credit to w3schools 
+// https://www.w3schools.com/howto/howto_js_collapsible.asp
+   var coll = document.getElementsByClassName("collapsible");
+   var i;
+   
+   for (i = 0; i < coll.length; i++) {
+     coll[i].addEventListener("click", function() {
+       this.classList.toggle("active");
+       var content = this.nextElementSibling;
+       if (content.style.display === "block") {
+         content.style.display = "none";
+       } else {
+         content.style.display = "block";
+       }
+     });
+   }
+
+
+
+
+
+
