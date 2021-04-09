@@ -177,6 +177,9 @@ p {
   color: white;
 }
 
+
+/* For collapsible Objective style guide credit to w3schools 
+ https://www.w3schools.com/howto/howto_js_collapsible.asp */
 .collapsible {
   background-color: rgb(59, 104, 163);
   color: rgb(255, 255, 255);

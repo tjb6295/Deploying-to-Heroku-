@@ -40,8 +40,6 @@ function makeRequest(){
 
 
 // for contact form credit to codebrainer https://www.codebrainer.com/blog/contact-form-in-javascript
-
-
    //method which initializes my variables
    class User {
     constructor(firstName, lastName, discription, state, email, question) {
