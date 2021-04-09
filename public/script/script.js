@@ -30,7 +30,7 @@ $(document).ready(function(){
 function makeRequest(){
   $.ajax({
       method:'GET',
-      url:'/recipe',
+      url:'/clothing',
       success: (data) => {
           console.log(data);
       }
