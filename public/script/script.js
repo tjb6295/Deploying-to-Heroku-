@@ -79,7 +79,48 @@ function makeRequest(){
    }
 
 
+//api
+$(document).ready(function () {
+  console.log("Ready!");
+  makeRequest('GET', '/mensClothing', (response) => {
+    for (var i = 0; i < response.length; i++) {
+      $('.api-data-men')
+        .append('<img src="' + response[i].image + '" class="responsive1"/>')
+        .append('<h3>' + response[i].title + '</h3>')
+        .append('<h3>' + response[i].price + '</h3>')
+        .append('<p>' + response[i].description + '</p>')
+    }
+    //console.log(JSON.stringify(response))
+  });
+  makeRequest('GET', '/womensClothing', (response) => {
+    for (var i = 0; i < response.length; i++) {
+      $('.api-data-women')
+        .append('<img src="' + response[i].image + '" class="responsive1"/>')
+        .append('<h3>' + response[i].title + '</h3>')
+        .append('<h3>' + response[i].price + '</h3>')
+        .append('<p>' + response[i].description + '</p>')
+    }
+    //console.log(JSON.stringify(response))
+  });
+  makeRequest('GET', '/electronicsStuff', (response) => {
+    for (var i = 0; i < response.length; i++) {
+      $('.api-data-electronics')
+        .append('<img src="' + response[i].image + '" class="responsive1"/>')
+        .append('<h3>' + response[i].title + '</h3>')
+        .append('<h3>' + response[i].price + '</h3>')
+        .append('<p>' + response[i].description + '</p>')
+    }
+    //console.log(JSON.stringify(response))
+  });
 
+  function makeRequest(method, url, successFn) {
+    $.ajax({
+      method: method,
+      url: url,
+      success: successFn
+    });
+  }
+})
 
 
 
