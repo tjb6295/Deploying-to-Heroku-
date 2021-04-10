@@ -5,9 +5,9 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var mensClothingRouter = require('./routes/mens_clothing');
-var womensClothingRouter = require('./routes/womens_clothing');
-var electronicsRouter = require('./routes/electronics_stuff');
+// var mensClothingRouter = require('./routes/mens_clothing');
+// var womensClothingRouter = require('./routes/womens_clothing');
+// var electronicsRouter = require('./routes/electronics_stuff');
 // var pokemonRouter = require('./routes/pokemon');
 // var clothingRouter = require('./routes/clothing');
 // var starwarsRouter = require('./routes/starwars');
@@ -24,9 +24,9 @@ app.use(express.static(path.join(__dirname, 'public'),{extensions: 'html'}));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/mensClothing', mensClothingRouter);
-app.use('/womensClothing', womensClothingRouter);
-app.use('/electronicsStuff', electronicsRouter);
+// app.use('/mensClothing', mensClothingRouter);
+// app.use('/womensClothing', womensClothingRouter);
+// app.use('/electronicsStuff', electronicsRouter);
 // app.use('/pokemon', pokemonRouter);
 // app.use('/clothing', clothingRouter);
 // app.use('/starwars', starwarsRouter);
