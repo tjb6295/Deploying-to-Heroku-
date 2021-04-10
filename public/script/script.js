@@ -22,22 +22,6 @@ function filterFunction() {
   }
 }
 
-$(document).ready(function(){
-  console.log("Ready!");
-  makeRequest();
-});
-
-function makeRequest(){
-  $.ajax({
-      method:'GET',
-      url:'/clothing',
-      success: (data) => {
-          console.log(data);
-      }
-  });
-}
-
-
 
 // for contact form credit to codebrainer https://www.codebrainer.com/blog/contact-form-in-javascript
    //method which initializes my variables
